@@ -1,19 +1,51 @@
-# React + Vite
+# Улучшенный Кликер
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+| React | 18.2.0 | JavaScript | ES6+ | CSS3 | LocalStorage | License | MIT |
+| ----- | ------ | ---------- | ---- | ---- | ------------ | ------- | --- |
 
-Currently, two official plugins are available:
+React-приложение кликер-игра с системой улучшений и прогрессирующей сложностью. Зарабатывайте очки, покупайте улучшения и достигайте новых уровней!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Возможности
 
-## React Compiler
+- ✅ **Система кликов** - зарабатывайте очки простыми кликами
+- ✅ **Уровни и прогрессия** - бесконечное повышение уровня
+- ✅ **Улучшения** - 3 типа улучшений с разными эффектами
+- ✅ **Автокликер** - автоматическое получение очков
+- ✅ **Сложность** - прогрессивное усложнение игры
+- ✅ **Сохранение прогресса** - автоматическое сохранение в localStorage
+- ✅ **Адаптивный дизайн** - оптимизировано для всех устройств
+- ✅ **Критические удары** - 5% шанс на ×5 очков
+- ✅ **Бонусы** - временные умножения очков
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Скриншоты
 
-Note: This will impact Vite dev & build performances.
+**[Интерфейс игры]** <img width="1150" height="768" alt="image" src="https://github.com/user-attachments/assets/6d729e48-34d0-4768-a583-811663d45e67" />
 
-## Expanding the ESLint configuration
+## Выводы
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+В ходе работы я научился работать с React, понял что такое Vite, узнал различие jsx от js. По практиковался в создании React и JS проектов.
+
+## Предварительные требования
+
+- **Node.js (версия 14 или выше)**
+- **npm или yarn**
+
+## Установка и запуск
+
+```bash
+
+**Клонирование репозитория**
+git clone https://github.com/zhorikbla/kr4.git
+
+**Переход в папку проекта**
+cd kr4
+
+**Установка зависимостей**
+npm install
+
+**Запуск приложения**
+npm start
+
+```
+
 # kr4
