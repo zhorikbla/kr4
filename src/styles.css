@@ -1,0 +1,222 @@
+/* Основной фон */
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #e8eef3 0%, #dfe7ed 100%);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.app-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.game-card h2 {
+  margin-bottom: 20px;
+  color: #2b3a42;
+}
+
+.game-card h3 {
+  margin: 25px 0 15px 0;
+  color: #344955;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+/* Сетка статистики */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.info {
+  font-size: 1rem;
+  margin: 4px 0;
+  color: #344955;
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 8px;
+  border-left: 3px solid #4caf50;
+}
+
+/* Бонусы */
+.bonus {
+  color: #e67e22;
+  font-weight: bold;
+  margin: 10px 0;
+  background: #fff3cd;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ffeaa7;
+}
+
+.auto-info {
+  color: #0984e3;
+  font-weight: bold;
+  margin: 8px 0;
+  background: #d0ebff;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* Кнопка "клик" */
+.main-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 18px;
+  font-size: 1.3rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s;
+  font-weight: bold;
+}
+
+.main-btn:active {
+  transform: scale(0.94);
+}
+
+.main-btn:hover {
+  background: #45a049;
+}
+
+/* Улучшения */
+.upgrade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin: 8px 0;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #0984e3;
+  text-align: left;
+}
+
+.upgrade-info h4 {
+  margin: 0 0 5px 0;
+  color: #2b3a42;
+}
+
+.upgrade-info p {
+  margin: 0 0 5px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.upgrade-info span {
+  color: #888;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.buy-btn {
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.buy-btn:hover {
+  background: #0770c4;
+}
+
+.buy-btn.disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Кнопка сброса */
+.reset-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.reset-btn:hover {
+  background: #c9302c;
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .game-card {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upgrade {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .buy-btn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .main-btn {
+    font-size: 1.1rem;
+    padding: 16px;
+  }
+}
+.fatigue-warning {
+  color: #e74c3c;
+  font-weight: bold;
+  margin: 8px 0;
+  background: #ffeaa7;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #fdcb6e;
+}
+
+.main-btn.fatigue {
+  background: #e67e22;
+}
+
+.main-btn.fatigue:hover {
+  background: #d35400;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 15px;
+}
